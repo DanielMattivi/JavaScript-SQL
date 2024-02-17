@@ -1,0 +1,21 @@
+<%- include('../views/partials/head') %>
+
+<h1>Editar as informações do(a) <%=produto.nome%></h1>
+
+<div class="forms">
+   <form action="/produtos/<%=produto._id%>?_method=PATCH" method="post" class="log">
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" value="<%=produto.nome%>" required>
+      <br>
+      <label for="preco">Preço:</label>
+      <input type="text" name="preco" id="preco" value="<%=produto.preco%>" required>
+      <br>
+      <label for="quantidade">Quantidade:</label>
+      <input type="text" name="quantidade" id="quantidade" value="<%=produto.quantidade%>" required>
+      <br>
+      <button>Enviar</button>
+   </form>
+   <a href="/produtos/<%= produto._id %>"><button class="botoes">Voltar</button></a>
+</div>
+
+<%- include('../views/partials/footer') %>

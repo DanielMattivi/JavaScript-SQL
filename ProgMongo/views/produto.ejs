@@ -1,0 +1,26 @@
+<%- include('../views/partials/head') %>
+
+<h1><%=produto.nome%></h1>
+
+<h2>Informações do produto</h2>
+
+<p class="p">Preço: R$<%=produto.preco%>.</p>
+<p class="p">Quantidade: <%=produto.quantidade%>.</p>
+
+<%= console.log(permAdm) %>
+<% if (permAdm) { %>
+<div class="adm">
+    <h3>Você está visualizando como um administrador do estoque.</h3>
+    <form action="/produtos/<%= produto._id %>/edit" method="GET">
+        <button class="botoes" type="submit">Editar o Produto</button>
+    </form>
+    <form id="f" action="/produtos/<%= produto._id %>?_method=DELETE"
+        method="POST">
+        <button class="botoes" type="button"
+            onClick="confirm('Tem certeza que deseja apagar o produto <%= produto.nome %>?') ? document.getElementById('f').submit() : false">Remover</button>
+    </form>
+    <% }else{ %>
+    <h3>Você não possui as permissões necessárias para alterar o estoque, entre como administrador.</h3>
+    <% } %>
+
+    <%- include('../views/partials/footer') %>

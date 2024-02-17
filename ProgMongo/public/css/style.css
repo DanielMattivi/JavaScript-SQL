@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #727272;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    display: block;
+}
+
+.p {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    text-align: left;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: rgb(56, 199, 255);
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+    font-weight: normal;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+    color: #777;
+    font-style: normal;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+input:hover {
+    border-color: #777;
+}
+
+textarea:hover {
+    border-color: #777;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #555;
+    color: rgb(56, 199, 255);
+    border-color: #555;
+}
+
+.botaoa {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+}
+
+.botaoa:hover {
+    background-color: #555;
+    color: rgb(56, 199, 255);
+    border-color: #555;
+}

@@ -1,0 +1,22 @@
+<%- include('../views/partials/head') %>
+
+
+<h1>
+    PRODUTOS EM ESTOQUE DA LOJA
+</h1>
+<h3>Por favor, escolha algum produto para visualizar.</h3>
+
+<% if (permAdm) { %>
+    <a class="botaoa" href="/produtos/new">Adicionar novo produto</a>
+    <% } %>
+
+<% for (produto of produtos) { %>
+    <a href="/produtos/<%= produto._id %>">
+        <h2><%= produto.nome %></h2>
+    </a>
+<% } %>
+
+
+
+
+<%- include('../views/partials/footer') %>
